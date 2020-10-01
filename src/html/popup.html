@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            .container {
+                min-width: 300px;
+            }
+
+            textarea {
+                border: none;
+                overflow: auto;
+                outline: none;
+
+                -webkit-box-shadow: none;
+                -moz-box-shadow: none;
+                box-shadow: none;
+                color: #00008b;
+            }
+
+            .pre {
+                font-style: normal;
+                font-variant-ligatures: normal;
+                font-variant-caps: normal;
+                font-variant-numeric: normal;
+                font-variant-east-asian: normal;
+                font-weight: 600;
+                font-stretch: normal;
+                font-size: 13.3333px;
+                line-height: normal;
+                font-family: monospace;
+                white-space: pre-line;
+            }
+
+            .bg {
+                background: #fefaff;
+            }
+
+            .func {
+                color: #00008b;
+            }
+
+            .docblock {
+                color: #966aac;
+                font-style: italic;
+            }
+
+            .pull-right {
+                float: right;
+                margin-bottom: 10px
+            }
+
+            button {
+                border-radius: 25px;
+                outline:none;
+            }
+
+            .pull-right button {
+                border-color: #edd5ff;
+                background-color: #fefaff;
+            }
+
+            .pull-right button:focus {
+                border-color: #9e6ecd;
+            }
+
+            .pull-right button:hover,
+            .pull-right button:active {
+                background-color: #f4cdff;
+            }
+        </style>
+    </head>
+    <body class="bg">
+        <div class="container">
+            <div>
+                <label for="js-code" hidden>transform clipboard function body</label>
+                <div class="pre">
+                    &nbsp<span class="docblock">/**
+                    &nbsp&nbsp* @param {string} data
+                    &nbsp&nbsp* @return {string}
+                    &nbsp&nbsp*/
+                    &nbsp</span><span class="func">function transform(data) {</span>
+                    &nbsp&nbsp&nbsp&nbsp<textarea id="js-code" class="bg" rows="10" cols="30" spellcheck="false"></textarea>&nbsp&nbsp&nbsp&nbsp
+                    &nbsp&nbsp&nbsp&nbsp<span class="func">return data;
+                    &nbsp}</span>
+                </div>
+            </div>
+
+            <div class="pull-right">
+                <button id="btn-clear">clear</button>
+                <span id="result"></span>
+            </div>
+        </div>
+        <script src="../js/popup.js"></script>
+        <!-- Icons made by https://www.flaticon.com/authors/icongeek26 from www.flaticon.com-->
+    </body>
+</html>
