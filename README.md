@@ -1,5 +1,7 @@
 # Programmable Clipboard
-Chrome extension which allows transforming the clipboard data with your javascript code.
+Chrome extension which allows transforming the text you copy in a browser with your javascript code.
+
+![demo](docs/demo.gif)
 
 ## Installation
 1. [Download](https://github.com/tuqqu/programmable-clipboard/archive/master.zip) and unpack the zip or `git clone https://github.com/tuqqu/programmable-clipboard.git`
@@ -14,12 +16,3 @@ Chrome extension which allows transforming the clipboard data with your javascri
 2. The argument `data` is your clipboard data (when you copy something in chrome)
 2. Write javascript code to transform `data`
 3. The value of `data` on the last line will be written to your clipboard
-
-### Example
-if you write 
-```javascript
-data = data.toUpperCase();
-data = `__${data}__`;
-```
-
-and then copy `big pillow`, you end up copying `__BIG PILLOW__` instead.
